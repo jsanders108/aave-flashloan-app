@@ -1,4 +1,4 @@
-This is a full-stack Solidity app which connects to a smart contract which requests USDC flash loans from Aave. The app is essentially a custom interface to interact with the smart contract. 
+This is a full-stack Solidity app which connects to a smart contract which requests USDC flash loans from Aave. The app is essentially a custom-built interface to interact with the smart contract. 
 
 The app has multiple components. First, I created a Solidity smart contract, which I then compiled and deployed to the Goerli Ethereum Testnet using Hardhat and Visual Studio Code. When called, the contract requests a USDC flash loan from Aave (via an Aave provider pool address). Note that USDC has been sent to the smart contract via Metamask to pay for the necessary fees. This USDC can be withdrawn out of the smart contract via the interface. 
 
