@@ -1,0 +1,119 @@
+html, body {
+    margin: 0;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    background: #e6e6e6;  
+}
+  
+/* HEADER */
+  
+#header--container {
+    background: white; 
+    padding: 20px 10px; 
+    margin-bottom: 30px; 
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.2);
+    text-align: center; 
+}
+    
+#header--title {
+    color: #303436;
+    font-family:'Ubuntu', sans-serif;
+    margin-bottom: 10px; 
+}
+
+#aave-logo {
+    width: 75px; 
+    margin-top: 10px; 
+}
+
+/* CONNECTORS */
+
+#sub-connect-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;  
+}
+    
+#contract-connection-message{
+    margin-top: 10px;
+    margin-bottom: 0px; 
+}
+
+ 
+#connect-btn {
+    background: maroon;
+    color: white;
+    padding: 10px 20px; 
+    font-size: 20px; 
+    border: none;
+    border-radius: 7px; 
+    margin-bottom: 5px; 
+    cursor: pointer; 
+}
+    
+#connect-btn:active {
+    box-shadow: inset 10px 10px 10px -3px rgba(0, 0, 0, 0.7);
+    background: lightcoral; 
+}
+   
+
+  /* FLASHLOAN SECTION */
+  
+  #main--container {
+    display: flex;
+    flex-direction: column;   
+    background: whitesmoke; 
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    max-width: 500px; 
+    margin: 60px auto; 
+    margin-top: 10px; 
+    padding: 10px; 
+    border-radius: 10px;
+  }
+  
+  #form-wrapper {
+    display: flex;
+    flex-direction: column; 
+    margin: 20px auto;   
+  }
+  
+  
+  label {
+    font-weight: bold; 
+    align-self: flex-start; 
+    margin-top: 15px
+  }
+  
+  input {
+    width: 245px;
+    margin-bottom: 0px;
+    margin-top: 5px;  
+    padding: 5px 5px;
+  }
+  
+  #request-btn {
+    align-self: center;
+    background-color: darkblue;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 30px; 
+    border-radius: 12px; 
+    cursor: pointer;
+  }
+  
+  #request-btn:focus {
+    outline: none;
+  }
+  
+  #request-btn:active {
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+    background: lightcoral; 
+  }

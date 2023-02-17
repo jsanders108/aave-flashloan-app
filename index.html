@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;
+        700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aave Flash Loan</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.2.7-rc.0/web3.min.js"></script>
+	<link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+        <div id="header--container">
+            <img id="aave-logo" src="./aave-logo.jpg" />
+            <h1 id="header--title">Aave USDC Flash Loan App</h1> 
+        </div>
+      
+        <div id="main-connect-wrapper">
+            <div id="sub-connect-wrapper">
+                <button onclick="connectMetamask()" id="connect-btn">Connect to Metamask</button>
+                <p id="metamask-connection-message">Not Connected</p>
+            </div>
+
+            <div id="sub-connect-wrapper">
+                <button onclick="connectContract()" id="connect-btn">Connect to Contract</button>
+                <p id="contract-connection-message">Not Connected</p>
+                <p id="USDC-balance">USDC Balance:</p>
+            </div>
+        </div>
+
+        <div id="main--container">
+            <form id="form-wrapper">
+                <label>Enter desired USDC flash loan amount:</label>
+                <input id="flashloan-amount" placeholder="Enter amount" />
+            </form>
+            <button onclick="requestLoan()" id="request-btn">Request Flash Loan</button>
+
+            <form id="form-wrapper">
+                <label>Enter USDC withdrawal amount:</label>
+                <input id="withdrawal-amount" placeholder="Enter amount" />
+            </form>
+            <button onclick="withdrawUSDC()" id="request-btn">Withdraw USDC</button>
+        </div> 
+
+        <script
+			src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+			type="application/javascript">
+	    </script>
+		<script src="/index.js"></script>
+
+  </body>
+</html>
